@@ -4,7 +4,7 @@ const router = express.Router();
 // @route   GET test/test
 // @desc    Tests get route
 // @access  Public
-router.get("/test", (req, res) => {
+router.get("/test*", (req, res) => {
   res.json({
     message: "get test success",
     sentHeaders: req.headers,
@@ -19,7 +19,7 @@ router.get("/test", (req, res) => {
 // @route   POST test/test
 // @desc    Tests post route
 // @access  Public
-router.post("/test", (req, res) => {
+router.post("/test*", (req, res) => {
   res.json({
     message: "post test success",
     sentHeaders: req.headers,
@@ -35,7 +35,7 @@ router.post("/test", (req, res) => {
 // @route   PUT test/test
 // @desc    Tests put route
 // @access  Public
-router.put("/test", (req, res) => {
+router.put("/test*", (req, res) => {
   res.json({
     message: "put test success",
     sentHeaders: req.headers,
@@ -51,7 +51,7 @@ router.put("/test", (req, res) => {
 // @route   DELETE test/delete
 // @desc    Tests delete route
 // @access  Public
-router.delete("/test", (req, res) => {
+router.delete("/test*", (req, res) => {
   res.json({
     message: "delete test success",
     sentHeaders: req.headers,
