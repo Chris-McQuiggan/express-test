@@ -1,9 +1,16 @@
 # express-test
 
+## Setup
+```npm install```
+
+```npm start```
+
+## Info
+Uses
 ```port: 5001```
 
 GET, POST, PUT, DELETE endpoints:
-```/test/test```
+```/test/test*```
 
 Responds with 
 ```
